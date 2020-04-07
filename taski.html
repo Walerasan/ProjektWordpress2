@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Taski do wykonania ćwiczenia - Tworzenie nowego motywu Wordpress część 2</title>
+	<style type="text/css">
+		.zadanie{
+			width: 100%;
+			font-family: tahoma;
+			font-size: 18px;
+			color: black;
+			margin: 20px;
+		}
+		.task{
+			width: 1024px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			border: 2px solid orange;
+			border-radius: 25px;
+		}
+		.opiszadania{
+			text-align: center;
+		}
+		img{
+			width: 60%;
+			margin: 10px;
+		}
+		footer{
+			width: 100%;
+			font-family: tahoma;
+			font-size: 18px;
+			color: black;
+			text-align: center;
+		}
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<section class="zadanie">
+		<article class="task">
+			<h1>Tworzenie Motywu Część II by Walerasan</h1>
+			<p class="opiszadania">
+                            1. Celem ćwiczenia jest zapoznanie się z strukturą dokumentów nowego motywu w WordPress<br>
+                            2. W pierszej kolejności dokonamy podziału pliku index.php na poszczególne nowe dokumenty php<br>
+                            3. Zaczynamy od utworzenia podziału na: index.php, header.php, footer.php<br>
+                            4. Dalej z projektu część I kopiujemy sobie dane do nowego motywu: screenshot.png, skrypt.js, style.css oraz katalog css<br>
+                            5. Katalog img oraz plik taski.html jak i plik README.md nie stanowią zawartości projektu (pliki pomocnicze i tutorial do wykonania ćwiczenia)<br>
+                            <img src="./img/Obraz1.png" alt="Wordpress czesc 2" />
+                        </p>
+		</article>
+	</section>
+	<section class="zadanie">
+		<article class="task">
+			<h1>Podział dokumentu index.php na: index.php, header.php, footer.php</h1>
+			<p class="opiszadania">
+                            1.Przechodzimy do index.php i wycinamy zaznaczony kod od "!DOCTYPE HTML" do zamknięcia znacznika "/header"<br>
+                            <img src="./img/Obraz2.png" alt="Wordpress czesc 2" /><br>
+                            2. Wyciętą część kodu wklejamy do pliku header.php<br>
+                            <img src="./img/Obraz3.png" alt="Wordpress czesc 2" /><br>
+                            3. Przechodzimy do index.php, wycinamy kod dla footer.php od znacznika "footer" do "/html"
+                            <img src="./img/Obraz4.png" alt="Wordpress czesc 2" /><br>
+                            4. Wklejamy do footer.php<br>
+                            <img src="./img/Obraz5.png" alt="Wordpress czesc 2" /><br>
+                            5. Przechodzimy do index.php i tutaj na początku pliku wpisujemy funkcję dołączającą nasz nagłówek<br>
+                            Ważne jest aby zwrócić uwagę jak sobie z tym radzi wordpres za pomocą funkcji: "get_header();" w ramach języka php<br>
+                            <img src="./img/Obraz6.png" alt="Wordpress czesc 2" /><br>
+                            6. Przechodzimy na sam dół dokumentu index.php i podpinamy za pomocą funkcji wordpresowej ;) funckję: "get_footer();" w ramach języka php<br>
+                            <img src="./img/Obraz7.png" alt="Wordpress czesc 2" /><br>
+                            7.Po uruchomieniu strona internetowa pomimo podzaiału powinna uruchamiać się tak jak projekt w części 1.<br>
+                            <img src="./img/Obraz8.png" alt="Wordpress czesc 2" /><br>
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>Tworzymy w CMS WordPress Menu</h1>
+			<p class="opiszadania">
+			functions.php
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>page.php</h1>
+			<p class="opiszadania">
+				
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>404.php</h1>
+			<p class="opiszadania">
+				
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>archive.php</h1>
+			<p class="opiszadania">
+				
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>comments.php</h1>
+			<p class="opiszadania">
+				
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>search.php</h1>
+			<p class="opiszadania">
+				
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>single.php</h1>
+			<p class="opiszadania">
+				
+			</p>
+		</article>
+	</section>
+    	<section class="zadanie">
+		<article class="task">
+			<h1>Szablon strony</h1>
+			<p class="opiszadania">
+				
+			</p>
+		</article>
+	</section>
+	<section class="zadanie">
+		<article class="task">
+			<h1>KONIEC</h1>
+			<p class="opiszadania">
+				Za wszelkie uwagi i wyszukane błędy będę wdzięczny w celu poprawienia tutorialu<br>
+				Dziękuję za uwagę w razie pytań proszę kontakt: <i><a href="mailto:informatyka@pszczyna.edu.pl">informatyka@pszczyna.edu.pl</a></i>
+			</p>
+		</article>
+	</section>
+	<footer>
+		<fieldset>
+			<legend>Ćwiczenie dla Technika Programisty, Informatyka rozszerzona</legend>
+			Copyright by Walerasan 2020 PZSnr1
+		</fieldset>
+	</footer>
+</body>
+</html>

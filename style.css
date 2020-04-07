@@ -1,0 +1,185 @@
+/*
+Theme Name: Strona projekt worpress w Netbeans
+Theme URI: localhost
+Description: Strona projekt WORDPRESS część 2
+Version: 1.0
+Author: walerasan
+Author URI: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+body,html{
+    padding: 0;
+    margin: 0;
+}
+ .menu {
+     width:100%;
+     background-color: #ffa500;
+     border-top: 10px solid purple;
+     border-bottom: 10px solid gray;
+     min-height: 100px;
+     margin: 0;
+     padding: 0;
+     color: gray;
+     font-size: 18px;
+ }
+ .boxmenu{
+     width: 620px;
+     margin: auto;
+ }
+ .menu .poziom1,.poziom2{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+ .menu .poziom1{
+     display: flex;
+ }
+ .menu .poziom2{
+     display: block;
+ }
+ .menu .poziom1 .item{
+     margin-top: 20px;
+     padding: 20px;
+     font-family: tahoma;
+     color: white;
+     display: block;
+     float: left;
+     position: relative;
+ }
+ .menu .poziom2 .item{
+     margin:0;
+     padding-top:10px;
+     padding-bottom: 5px;
+     font-family: tahoma;
+     color: white;
+     display: block;
+     float: left;
+     position: relative;
+ }
+ .menu a{
+     text-decoration: none;
+     color: white;
+ }
+.menu .poziom2{
+    display: none;
+    position: absolute;
+    left: 10;
+    opacity: 0;
+}
+.menu .poziom1 li:hover > .poziom2 {
+    display: block;
+    background-color: #ffa500;
+    opacity: 1;
+}
+.menu .poziom1 .item a:hover{
+    color: gray;
+}
+.logoGitHub{
+    display: block;
+    padding-top: 18px;
+}
+.menu .poziom1 .item .arrow {
+    position: relative;
+    top: 15px;
+    left: 5px;
+    right: 0; 
+    margin-right: -8px; 
+    border-top: 4px solid gray; 
+    border-right: 4px solid transparent; 
+    border-left: 4px solid transparent;
+}
+.artykul{
+    width: 95%;
+    min-height: 250px;
+    margin-left: 25px;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 25px;
+}
+.artykul h1{
+    font-family: 'Cabin', sans-serif;
+}
+.artykul p{
+     text-align: justify;
+}
+.container{
+    float: left;
+    width: 50%;
+    border-right: 30px solid #ffa500;
+}
+.artykul img{
+    width: 20%;
+    display: block;
+    float: right;
+    margin: 5px;
+    border: 2px solid #ffa500;
+    border-radius: 25px 50px; 
+    
+}
+.specjalizacje .kontaktemail{
+    padding-top: 30px;
+    color: purple;
+    font-style: italic;
+}
+.specjalizacje, .specjalizacja2{
+    color: white;
+}
+.stopkaartykulu{
+    text-align: right;
+}
+.clear{
+    clear: both;
+}
+.footer-stopka{
+    clear: both;
+     width:100%;
+     background-color: #ffa500;
+     border-top: 10px solid purple;
+     border-bottom: 10px solid gray;
+     min-height: 100px;
+     margin: 0;
+     padding: 0;
+     font-size: 18px;
+}
+ .boxstopka{
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    font-family: 'Righteous', cursive;
+ }
+ .sidebar{
+     float: left;
+ }
+ .sidebarsrodek{
+   margin-left: 10px;
+   text-align: center;
+ }
+ .wrapperstrona{
+     width: 100%;
+ }
+ .ikony .ikonyview{
+     margin: 10px;
+     width: 100px;
+ }
+  .ikony .ikonyview:hover{
+      opacity: 0.6;
+ }
+ legend{
+     font-family: 'Lobster', cursive;
+     font-size: 25px;
+ }
+ .formularzkontaktowy input,textarea{
+     display: block;
+     margin: 15px;
+     border: 2px solid orange;
+     border-radius: 5px;
+     padding: 5px;
+ }
+ .formularzkontaktowy .submitbtn{
+  background-color: gray;
+  border: 2px solid black !important;
+ }
+
