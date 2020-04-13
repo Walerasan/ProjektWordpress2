@@ -1,6 +1,22 @@
 <?php get_header(); ?>
-        <nav class="menu">
-            <div class="boxmenu">
+<?php
+
+wp_nav_menu($args = array(
+    'theme_location'    => "main-menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+    'menu_class'        => "poziom1", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+    'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
+    'container'         => "nav", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
+    'container_class'   => "menu", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
+    'before'          => "<li class='item'>",
+    'after'           => "</li>",
+    'link_before'       => "", // (string) Text before the link text.
+    'link_after'        => "", // (string) Text after the link text.
+    'echo'              => true, // (bool) Whether to echo the menu or return it. Default true.
+));
+
+?>
+    <nav class="menu">
+            
                 <ul class="poziom1">
                    <li><a href="index.php"><img src="<?php bloginfo('template_directory') ?>/img/git.png" alt="logoGitHub" class="logoGitHub"></a></li>
                    <li class="item"><a href="#">Strona główna</a></li>
@@ -19,7 +35,7 @@
                    </li>
                    <li class="item"><a href="#">Kontakt</a></li>
                 </ul>
-            </div>
+            
         </nav>
     <div class="wrapperstrona">
         <div class="container">
