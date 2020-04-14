@@ -30,7 +30,7 @@ body,html{
      width: 620px;
      margin: auto;
  }
- .menu .poziom1,.poziom2{
+ .menu .poziom1,.sub-menu{
      list-style: none;
      margin: 0;
      padding: 0;
@@ -38,10 +38,10 @@ body,html{
  .menu .poziom1{
      display: flex;
  }
- .menu .poziom2{
+ .menu .sub-menu{
      display: block;
  }
- .menu .poziom1 .item{
+ .menu .poziom1 .menu-item{
      margin-top: 20px;
      padding: 20px;
      font-family: tahoma;
@@ -50,7 +50,7 @@ body,html{
      float: left;
      position: relative;
  }
- .menu .poziom2 .item{
+ .menu .sub-menu .menu-item{
      margin:0;
      padding-top:10px;
      padding-bottom: 5px;
@@ -64,33 +64,32 @@ body,html{
      text-decoration: none;
      color: white;
  }
-.menu .poziom2{
+.menu .sub-menu{
     display: none;
     position: absolute;
     left: 10;
     opacity: 0;
 }
-.menu .poziom1 li:hover > .poziom2 {
+.menu .poziom1 li:hover > .sub-menu {
     display: block;
     background-color: #ffa500;
     opacity: 1;
 }
-.menu .poziom1 .item a:hover{
+
+.menu .poziom1 .menu-item a:after{
     color: gray;
+    content: ' ▾';
+}
+.menu .poziom1 .menu-item a:only-child:after{
+    content: '';
 }
 .logoGitHub{
     display: block;
-    padding-top: 18px;
 }
-.menu .poziom1 .item .arrow {
-    position: relative;
-    top: 15px;
-    left: 5px;
-    right: 0; 
-    margin-right: -8px; 
-    border-top: 4px solid gray; 
-    border-right: 4px solid transparent; 
-    border-left: 4px solid transparent;
+.logoGitHubBox{
+    position: absolute;
+    top:350px;
+    left: 200px;
 }
 .artykul{
     width: 95%;
