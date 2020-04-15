@@ -27,7 +27,7 @@ body,html{
      font-size: 18px;
  }
  .boxmenu{
-     width: 620px;
+     width: 800px;
      margin: auto;
  }
  .menu .poziom1,.sub-menu{
@@ -87,9 +87,9 @@ body,html{
     display: block;
 }
 .logoGitHubBox{
-    position: absolute;
-    top:350px;
-    left: 200px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 320px;
 }
 .artykul{
     width: 95%;
@@ -151,6 +151,7 @@ body,html{
  }
  .sidebar{
      float: left;
+     width: 580px;
  }
  .sidebarsrodek{
    margin-left: 10px;

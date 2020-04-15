@@ -107,63 +107,30 @@
                             <img src="./img/Obraz19.png" alt="Wordpress czesc 2" /><br>
                             <img src="./img/Obraz20.png" alt="Wordpress czesc 2" /><br>
                             <img src="./img/Obraz21.png" alt="Wordpress czesc 2" /><br>
-                            
-			</p>
-		</article>
-	</section>
-    	<section class="zadanie">
-		<article class="task">
-			<h1>page.php</h1>
-			<p class="opiszadania">
-				
-			</p>
-		</article>
-	</section>
-    	<section class="zadanie">
-		<article class="task">
-			<h1>404.php</h1>
-			<p class="opiszadania">
-				
-			</p>
-		</article>
-	</section>
-    	<section class="zadanie">
-		<article class="task">
-			<h1>archive.php</h1>
-			<p class="opiszadania">
-				
-			</p>
-		</article>
-	</section>
-    	<section class="zadanie">
-		<article class="task">
-			<h1>comments.php</h1>
-			<p class="opiszadania">
-				
-			</p>
-		</article>
-	</section>
-    	<section class="zadanie">
-		<article class="task">
-			<h1>search.php</h1>
-			<p class="opiszadania">
-				
-			</p>
-		</article>
-	</section>
-    	<section class="zadanie">
-		<article class="task">
-			<h1>single.php</h1>
-			<p class="opiszadania">
-				
-			</p>
-		</article>
-	</section>
-    	<section class="zadanie">
-		<article class="task">
-			<h1>Szablon strony</h1>
-			<p class="opiszadania">
-				
+                            13. Przechodzimy do pliku: index.php, modyfikujemy kod, usuwamy stare statyczne menu nawigacyjne "nav /nav"<br>
+                            Proszę zwrócić uwagę co pozostawiliśmy w kodzie, jakie opcje dla wp_nav_menu( $args )<br>
+                            Opcja: 'theme_location' => "main-menu" to nazwa menu jaką zarejestrowaliśmy w pliku functions.php, do której się odwołujemy, która jest widoczna w CMS<br>                     
+                            'container' => "div", to nazwa znacznika przechowującego menu<br>
+                            'container_class' => "boxmenu", to nazwa klasy znacznika div przechowującego menu, w css mamy odwołanie do tej klasy<br>
+                            'menu_class' => "poziom1", to nazwa klasy dla znacznika "ul" naszej listy menu
+                            'depth' => 2, liczba ta mówi ilu poziomowe posiadamy menu<br>
+                            Dodajemy jeszcze kod logoGitHub<br>
+                            <img src="./img/Obraz22.png" alt="Wordpress czesc 2" /><br>
+                            14.Teraz czas na modyfikację arkusza styli<br>
+                            Po dodaniu menu, wordpress wygenerował kilka klas css które wdrożymy w naszym projekcie do poprawnego wyświetlania menu<br>
+                            Zachęcam wszystkich aby postudiować sobie funkcję: wp_nav_menu( $args ) wraz z dokumentacją wordpressa<br>
+                            Ogólnie mówiąc, dzięki niej teraz dynamicznie możemy dodawać nowe zakładki "menu" dla naszej strony<br>
+                            Proszę dokładnie teraz wdrożyć zmiany w css, według poniższych obrazów<br>
+                            <img src="./img/Obraz23.png" alt="Wordpress czesc 2" /><br>
+                            <img src="./img/Obraz24.png" alt="Wordpress czesc 2" /><br>
+                            <img src="./img/Obraz25.png" alt="Wordpress czesc 2" /><br>
+                            <img src="./img/Obraz26.png" alt="Wordpress czesc 2" /><br>
+                            <img src="./img/Obraz27.png" alt="Wordpress czesc 2" /><br>
+                            Proszę zwrócić uwagę na takie klasy jak: "sub-menu", "menu-item", zostały automatycznie wygenerowane przez wp_nav_menu<br>
+                            Odwołujemy się do nich, łatwo sprawdzić czy są za pomocą "Inspektora przeglądarki" (F12) lub Ctrl+Shift+C<br>
+                            <img src="./img/Obraz28.png" alt="Wordpress czesc 2" /><br>
+                            15.Na koniec w wordpress proszę dodać kolejną zakładkę do menu: np. "Aktualności" oraz poprawić kod css w celu poprawnego wyświetlania się menu<br>
+                            <img src="./img/Obraz29.png" alt="Wordpress czesc 2" /><br>
 			</p>
 		</article>
 	</section>

@@ -137,7 +137,7 @@ wp_nav_menu( $args );
                         <form>
                             <input type="text" placeholder="Podaj imię">
                             <input type="text" placeholder="Podaj nazwisko">
-                            <textarea cols="80" rows="5"></textarea>
+                            <textarea cols="70" rows="5"></textarea>
                             <input type="submit" value="Wyślij..." class="submitbtn">
                         </form>
                     </fieldset>
